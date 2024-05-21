@@ -1,4 +1,4 @@
-package events.domains;
+package Task_01.events.domains;
 import java.time.LocalDate;
 public class Event {
 
