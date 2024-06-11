@@ -1,7 +1,7 @@
-package Task_01.events.controllers;
+package Task_02.EventsTests.controllers;
 
-import Task_01.events.domains.Event;
-import Task_01.events.services.EventService;
+import Task_02.EventsTests.domains.Event;
+import Task_02.EventsTests.services.EventService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -9,7 +9,7 @@ import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class EventController {
 

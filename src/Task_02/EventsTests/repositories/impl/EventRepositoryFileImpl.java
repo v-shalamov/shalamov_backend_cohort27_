@@ -1,7 +1,7 @@
-package Task_01.events.repositories.impl;
+package Task_02.EventsTests.repositories.impl;
 
-import Task_01.events.domains.Event;
-import Task_01.events.repositories.EventRepository;
+import Task_02.EventsTests.domains.Event;
+import Task_02.EventsTests.repositories.EventRepository;
 
 import java.io.*;
 import java.time.LocalDate;

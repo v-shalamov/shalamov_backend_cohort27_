@@ -1,11 +1,11 @@
-package Task_01.events;
+package Task_02.EventsTests;
 
-import Task_01.events.controllers.EventController;
-import Task_01.events.repositories.EventRepository;
-import Task_01.events.repositories.impl.EventRepositoryFileImpl;
-import Task_01.events.repositories.impl.EventRepositoryListImpl;
-import Task_01.events.services.EventService;
-import Task_01.events.services.impl.EventServiceImpl;
+import Task_02.EventsTests.controllers.EventController;
+import Task_02.EventsTests.repositories.EventRepository;
+import Task_02.EventsTests.repositories.impl.EventRepositoryFileImpl;
+import Task_02.EventsTests.repositories.impl.EventRepositoryListImpl;
+import Task_02.EventsTests.services.EventService;
+import Task_02.EventsTests.services.impl.EventServiceImpl;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         EventRepository eventRepositoryList = new EventRepositoryListImpl();
         EventRepository eventRepositoryFile = new EventRepositoryFileImpl("events.txt");
-        EventService eventService = new EventServiceImpl(eventRepositoryFile);
+        EventService eventService = new EventServiceImpl(eventRepositoryList);
         EventController eventController = new EventController(scanner, eventService);
 
         boolean isRun = true;
